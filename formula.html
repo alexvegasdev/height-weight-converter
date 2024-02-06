@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Weight Converter</title>
+    <meta name="description" content="Unit converter, Height, Weight, cm, feet, ft, pounds, kilograms" >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="calculator-filled.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="root">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calculator-filled" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-10 15a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm-8 -4a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm-1 -7h-6a2 2 0 0 0 -2 2v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-1a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" /></svg></span>
+                    </li>
+                    <li>
+                        <a href="index.html"  id="home" title="Home">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="formula.html" id="formula" title="Formulas">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-math-x-divide-y-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l18 -18" /><path d="M15 14l3 4.5" /><path d="M21 14l-4.5 7" /><path d="M3 4l6 6" /><path d="M3 10l6 -6" /></svg>
+                        </a>
+                    </li>
+                </ul>                
+            </nav>
+        </header>
+
+        <main class="container-formula">
+            <h1>Formulas and Examples</h1>
+            <section class="container-formulas">
+                <article>
+                    <h2>Height</h2>
+                    <p>1 m = 100 cm </p>
+                    <p>1 foot = 12 inches = 0.3048 m </p> 
+                    <p>1 m = 3.28084 ft</p>
+                    <p>1 in = 0.0254 m</p>
+                    <p>1 cm = 0.393701 in</p>
+                </article>
+                <article >
+                    <h2>Examples: </h2>
+                    <div class="container-examples">
+                        <div>
+                            <p> → 6'1 ft to meters </p>
+                            <p> m = 6 * 0.3048 + 1 * 0.0254 </p>
+                            <p> m = 1.8288 + 0.0254</p>
+                            <p> m = 1.8542 ≈ 1.85</p>
+                            <p> 6ft 1in ≈ 1m 85cm</p>
+                        </div>
+                        <div>
+                            <p> → 1.73m to feet </p>
+                            <p> ft = 1.73 * 3.28084</p>
+                            <p> ft = 5.6758532 ≈ 5.675 </p>
+                            <p> Extract whole feet(5) and decimal part(0.675)</p>
+                            <p> in = 0.675 * 12 = 8.1 ≈ 8</p>
+                            <p> 1m 73cm ≈ 5ft 8in</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <h2>Weight</h2>
+                    <p> 1kg = 1000 g</p>
+                    <p> 1 kg = 2.20462 lb </p>
+                    <p> 1 lb = 0.453592 kg</p>
+                </article>
+                <article>
+                    <h2>Examples</h2>
+                    <div class="container-examples">
+                        <div>
+                            <p> → 150lb to kg</p>
+                            <p> kg = 150 * 0.453592 = 68.03893</p>
+                            <p> 150lb ≈ 68 kg</p>
+                        </div>
+                        <div>
+                            <p> → 80 kg to lb </p>
+                            <p> lb = 80 * 2.20462 = 176.3696</p>
+                            <p> lb ≈ 176.37 </p>
+                        </div>
+                    </div>
+                </article>    
+            </section>
+                
+        </main>
+        <footer>
+            © H&W Converter 2024 
+        </footer>
+    </div>
+</body>
+</html>

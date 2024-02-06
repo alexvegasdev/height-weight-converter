@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Weight Converter</title>
+    <meta name="description" content="Unit converter, Height, Weight, cm, feet, ft, pounds, kilograms" >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="calculator-filled.svg" type="image/svg+xml">
+    
+</head>
+<body>
+    <div class="root">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calculator-filled" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-10 15a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm-8 -4a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm-1 -7h-6a2 2 0 0 0 -2 2v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-1a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" /></svg></span>
+                    </li>
+                    <li>
+                        <a href="index.html"  id="home" title="Home">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="formula.html" id="formula" title="Formulas">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-math-x-divide-y-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l18 -18" /><path d="M15 14l3 4.5" /><path d="M21 14l-4.5 7" /><path d="M3 4l6 6" /><path d="M3 10l6 -6" /></svg>
+                        </a>
+                    </li>
+                </ul>                
+            </nav>
+        </header>
+
+        <main class="container-index">
+            <h1>Height and Weight Converter</h1>
+            <section class="container-measures">
+                <fieldset class="container-height">
+                    <h2>Height</h2>
+                    <div>
+                        <h3>Feet + Inches</h3>
+                        <label>
+                            <input type="number" id="feet" step="1" name="height" min="0" placeholder="0" oninput="updateHeight('feet')">
+                            ft
+                        </label>
+                        <label>
+                            <input type="number" id="inches" step="1" name="height" min="0" max="11" placeholder="0" oninput="updateHeight('inches')">
+                            in
+                        </label>
+                    </div>
+                    <div>
+                        <h3>Meters + centimeters</h3>
+                        <label>
+                            <input type="number" id="m" step="1" name="height" min="0" placeholder="0" oninput="updateHeight('m')">
+                            m
+                        </label>
+                        <label>
+                            <input type="number" id="cm" step="1" name="height" min="0" max="99" placeholder="0" oninput="updateHeight('cm')">
+                            cm
+                        </label>
+                    </div>                    
+                    <a href="#" id="reset-height" class="button-reset" onclick="resetHeight()">Reset</a>
+                </fieldset>
+                
+                <fieldset class="container-weight">
+                    <h2>Weight</h2>
+                    <div>
+                        <h3>Pounds</h3>
+                        <label>
+                            <input type="number" id="pounds" name="height" min="0" placeholder="0" oninput="updateWeight('pounds')"> lb
+                        </label>
+                    </div>
+                    <div>
+                        <h3>Kilograms</h3>
+                        <label>
+                            <input type="number" id="kg"  name="height" min="0" placeholder="0" oninput="updateWeight('kg')"> kg
+                        </label>
+                    </div>
+                    <a href="#"  id="reset-weight"  class="button-reset"  onclick="resetWeight()">Reset</a>
+                </fieldset>
+            </section>
+        </main>
+
+        <footer>
+            © H&W Converter 2024 
+        </footer>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
