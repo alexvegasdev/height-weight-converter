@@ -147,10 +147,20 @@ article{
     grid-template-rows: 1.3fr .7fr;
 }
 
+
+.container-formula ul{
+    padding: 5px 15px;
+}
+
+.container-examples li{
+    list-style-type: none;
+}
+
 .container-examples{
     display:grid;
     grid-template-columns: 1fr 1fr ;
 }
+
 
 footer{
     display: flex;

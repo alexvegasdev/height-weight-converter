@@ -16,7 +16,7 @@ function updateHeight(unit) {
                 document.getElementById('cm').value = centimeters.toFixed(2);
             }
             else{
-                alert("Remeber to insert values from 0 to 12 for inches.");
+                alert("Remeber to insert values from 0 to 11 for inches.");
             }
         } else {
             alert("Please, insert interger values.");
